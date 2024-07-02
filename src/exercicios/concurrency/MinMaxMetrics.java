@@ -6,8 +6,8 @@ public class MinMaxMetrics {
     private volatile long max;
 
     public MinMaxMetrics() {
-        this.min = Long.MIN_VALUE;
-        this.max = Long.MAX_VALUE;
+        this.min = Long.MAX_VALUE;
+        this.max = Long.MIN_VALUE;
     }
 
     /**
@@ -15,8 +15,8 @@ public class MinMaxMetrics {
      */
     public void addSample(long newSample) {
         synchronized (this){
-            this.min = Math.min(newSample, this.min);
-            this.max = Math.max(newSample, this.max);
+            this.min = Math.min(this.min, newSample);
+            this.max = Math.max(this.max, newSample);
         }
     }
 

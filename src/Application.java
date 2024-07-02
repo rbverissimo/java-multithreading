@@ -7,7 +7,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        ContextPerformer context = new MinMaxMetricsContext(4, 10);
+        ContextPerformer context = new MinMaxMetricsContext(4, 1000);
 
         try {
             context.perform();
