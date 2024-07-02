@@ -6,14 +6,18 @@ public class MinMaxMetrics {
     private volatile long max;
 
     public MinMaxMetrics() {
-        // Add code here
+        this.min = Long.MIN_VALUE;
+        this.max = Long.MAX_VALUE;
     }
 
     /**
      * Adds a new sample to our metrics.
      */
     public void addSample(long newSample) {
-        // Add code here
+        synchronized (this){
+            this.min = Math.min(newSample, this.min);
+            this.max = Math.max(newSample, this.max);
+        }
     }
 
     /**
