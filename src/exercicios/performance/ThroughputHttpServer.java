@@ -25,7 +25,7 @@ public class ThroughputHttpServer {
 
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            
+
         }
     }
 }
