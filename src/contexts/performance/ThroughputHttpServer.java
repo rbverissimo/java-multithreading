@@ -1,4 +1,4 @@
-package src.exercicios.performance;
+package src.contexts.performance;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;

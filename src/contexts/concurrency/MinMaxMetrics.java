@@ -1,4 +1,4 @@
-package src.exercicios.concurrency;
+package src.contexts.concurrency;
 
 public class MinMaxMetrics {
 

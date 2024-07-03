@@ -1,7 +1,6 @@
 package src;
 
-import src.exercicios.concurrency.MinMaxMetricsContext;
-import src.exercicios.concurrency.reentrantLock.PricesUpdaterContext;
+import src.contexts.concurrency.reentrantLock.PricesUpdaterContext;
 import src.interfaces.ContextPerformer;
 
 public class Application {

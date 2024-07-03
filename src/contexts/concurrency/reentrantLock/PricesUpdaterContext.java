@@ -1,4 +1,4 @@
-package src.exercicios.concurrency.reentrantLock;
+package src.contexts.concurrency.reentrantLock;
 
 import src.interfaces.ContextPerformer;
 
